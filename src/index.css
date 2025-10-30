@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{ --bg:#0b1020; --surface:#0f1733; --card:#121936; --line:#2a366b; --brand:#6aa3ff; --brand-ink:#0a0f1f; --text:#e9eef8; --muted:#a9b5d1; --danger:#ef4444; }
+html,body,#root{height:100%}
+body{ background: radial-gradient(1200px 800px at 10% 10%, #0e1632 0%, var(--bg) 55%) no-repeat; color: var(--text); font-family: Poppins, Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif; }
+.container-narrow{margin-left:auto;margin-right:auto;max-width:72rem;padding-left:1rem;padding-right:1rem}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(0,0,0,.06)),var(--card); border:1px solid color-mix(in srgb,var(--line),transparent 40%); border-radius:1rem; box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:0.75rem;font-weight:600;transition:all .2s;user-select:none}
+.btn:focus-visible{outline:2px solid color-mix(in srgb,var(--brand),white 40%); outline-offset:2px}
+.btn-lg{padding:.75rem 1.25rem;font-size:.9rem}.btn-md{padding:.5rem 1rem;font-size:.9rem}.btn-sm{padding:.5rem .75rem;font-size:.75rem}
+.btn-primary{background:linear-gradient(180deg,color-mix(in srgb,var(--brand),#fff 10%),var(--brand)); color:var(--brand-ink)}
+.btn-primary:hover{filter:brightness(1.08); transform:translateY(-1px)}
+.btn-secondary{background:var(--surface); color:var(--text); border:1px solid color-mix(in srgb,var(--line),transparent 30%)}
+.btn-secondary:hover{background:color-mix(in srgb,var(--surface),white 3%)}
+.btn-ghost{background:transparent; color:var(--text); border:1px dashed color-mix(in srgb,var(--line),transparent 20%)}
+.input{width:100%;border-radius:0.75rem;padding:.75rem 1rem;font-size:.9rem;outline:none;transition:border-color .2s, box-shadow .2s; background:var(--surface); border:1px solid color-mix(in srgb,var(--line),transparent 35%); color:var(--text)}
+.input:focus{border-color:var(--brand); box-shadow:0 0 0 4px color-mix(in srgb,var(--brand),transparent 80%)}
+.table{width:100%}
+.table thead th{text-align:left;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted); background:color-mix(in srgb,var(--surface),black 10%)}
+.table th,.table td{padding:1rem; border-bottom:1px solid color-mix(in srgb,var(--line),transparent 60%)}
+.table tr:hover td{background:color-mix(in srgb,var(--surface),white 3%)}
+.badge{display:inline-flex;align-items:center;gap:.25rem;border-radius:9999px;padding:.25rem .5rem;font-size:.7rem;font-weight:600; background:color-mix(in srgb,var(--surface),black 8%); border:1px solid color-mix(in srgb,var(--line),transparent 50%); color:var(--muted)}
+.app-header{backdrop-filter:blur(10px); background:rgba(9,14,30,.6); border-bottom:1px solid color-mix(in srgb,var(--line),transparent 60%)}
